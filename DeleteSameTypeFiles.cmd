@@ -8,7 +8,7 @@ echo Target folder:
 echo %ROOT%
 echo.
 
-set /p "PAT=Enter file pattern to delete (e.g. *.idx): "
+set /p "PAT=Enter file pattern to delete (e.g. *.tmp): "
 if "%PAT%"=="" (
 echo No pattern entered. Exiting.
 pause
@@ -39,4 +39,5 @@ echo.
 echo Done. Deleted !COUNT! file(s).
 echo.
 echo Press any key to close...
+
 pause >nul
